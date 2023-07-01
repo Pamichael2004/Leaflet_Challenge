@@ -1,8 +1,8 @@
 # Leaflet_Challenge
-Step 1: Store our API endpoint as query Url
+Step 1: Store  API endpoint as query Url
 Step 2: Perform a GET request to the query URL
-Step 3: Define a function that we want to run once for each feature in the features array
-Step 3.1:Give each feature a popup that describes the place and time of the earthquake
+Step 3: Define a function that to run once for each feature in the features array
+Step 3.1:Give each feature a popup that describes the place and time and magnitude of the earthquake
 Step 5: Send earthquakes layer to the createMap function
 Step 6:Create the base layers
 Step 7:Create a baseMaps object
@@ -12,4 +12,4 @@ Step 10: Create a layer control
 Step 10.1: Pass it our baseMaps and overlayMaps
 Step 10.2: Add the layer control to the map
 
-Sources: TA Erin Code Hints, Class Activities 15- Mapping 10-Stu_GeoJson
+Sources & Coaching: TA Erin, Will Wright & Code Hints from Class Activities 15- Mapping 10-Stu_GeoJson
