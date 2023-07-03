@@ -15,8 +15,7 @@ function createFeatures(earthquakeData) {
       "</h3><hr><p>" + new Date(feature.properties.time) + "</p>" + "<br><h2> Magnitude: " + feature.properties.mag + "</h2>");
   }
 
-  // Create a GeoJSON layer containing the features array on the earthquakeData object
-  function createCircleMarker(feature,latlng){
+   function createCircleMarker(feature,latlng){
     let options = {
         radius:feature.properties.mag*5,
         fillColor: chooseColor(feature.properties.mag),
@@ -27,7 +26,7 @@ function createFeatures(earthquakeData) {
     }
     return L.circleMarker(latlng, options);
 }
-  
+   // Create a GeoJSON layer containing the features array on the earthquakeData object
   let earthquakes = L.geoJSON(earthquakeData, {
     onEachFeature: onEachFeature,
     pointToLayer: createCircleMarker
@@ -62,7 +61,7 @@ legend.onAdd = function (map) {
         grades = [1.0, 2.5, 4.0, 5.5, 8.0],
         labels = [];
 
-    // loop through density intervals
+    // loop through earthquake density intervals
     for (let i = 0; i < grades.length; i++) {
         div.innerHTML +=
             '<i style="background:' + chooseColor(grades[i] + 1) + '"></i> ' +
